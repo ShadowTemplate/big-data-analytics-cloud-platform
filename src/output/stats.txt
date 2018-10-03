@@ -1,0 +1,19 @@
+ITWAC conversion - warmachine
+Elapsed time: 0 hour(s), 6 minute(s), 8 second(s)
+
+ITWAC indexing - warmachine
+Elapsed time: 0 hour(s), 25 minute(s), 56 second(s)
+
+ITWAC indexing, with prefix - warmachine
+Elapsed time: 0 hour(s), 24 minute(s), 38 second(s)
+
+ITWAC indexing, with prefix - hadoop 4+1 n1-standard-1
+Elapsed time: 0 hour(s), 18 minute(s), 16 second(s)
+
+
+
+
+
+
+
+

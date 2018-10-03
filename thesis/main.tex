@@ -1,0 +1,55 @@
+\documentclass[a4paper,12pt,titlepage]{book}
+
+\usepackage{fancyhdr}
+\usepackage[swapnames]{frontespizio}
+\usepackage[italian]{babel}
+\usepackage[T1]{fontenc}
+% \usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage[bookmarks]{hyperref}
+\usepackage{amsmath}
+\usepackage{verbatim} % citazioni
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{listings} % code
+\usepackage{booktabs} % tables
+\usepackage[style=numeric, backend=biber]{biblatex}
+\usepackage{wrapfig} % immagini allineate con testo
+\graphicspath{ {img/} {imgtesi/} }
+\newcommand{\dd}[1]{\mathrm{d}#1} % numerare formule
+
+\addbibresource{bibliografia.bib} 
+
+%%%% ABSTRACT DEFINITION
+\newenvironment{abstract} %
+{\cleardoublepage %
+\thispagestyle {empty} %
+\null \vfill \begin{center} %
+\bfseries \abstractname \end {center}} %
+{\vfill \null }
+
+
+\begin{document}
+
+\begin{frontespizio}
+\Logo{./img/logo_uniba}
+\Universita{Bari}
+\Dipartimento{Informatica}
+\Corso[Laurea Triennale]{Informatica}
+\Annoaccademico{2013 -- 2014}
+\Titolo{Piattaforma cloud per l'analisi di big data
+
+provenienti da social network}
+\Sottotitolo{Tecnologie per l'individuazione di contenuti a sfondo discriminatorio}
+\Candidato[587176]{Gianvito Taneburgo}
+\Relatore{Prof. Pasquale Lops}
+\Relatore{Dott. Pierpaolo Basile}
+\end{frontespizio} 
+
+\include{index}
+
+\printbibliography
+\addcontentsline{toc}{chapter}{Bibliografia}
+
+\end{document}

@@ -1,0 +1,4 @@
+folder_path=/media/win/Users/Gianvito/Desktop/TESI/CODE/output/itwac_converted
+file_name=itwac_part
+suffix=.txt
+max_file_size=500000000

@@ -1,0 +1,12 @@
+hadoop jar BDACP.jar build_index ITWAC_corpus_converted output/indexes/itwac plain_text_tokenizer itwac:
+hadoop jar BDACP.jar build_index tweet/class1.txt output/indexes/class1 tweets_tokenizer tweet:
+hadoop jar BDACP.jar build_index tweet/class3.txt output/indexes/class3 tweets_tokenizer tweet:
+hadoop jar BDACP.jar build_index tweet/class4.txt output/indexes/class4 tweets_tokenizer tweet:
+
+hadoop jar BDACP.jar kl_divergence output/n1-standard-1_4+1/indexes/itwac output/n1-standard-1_4+1/indexes/class1 output/n1-standard-1_4+1/kldivergence/class1 itwac: tweet: tab
+hadoop jar BDACP.jar kl_divergence output/n1-standard-1_4+1/indexes/itwac output/n1-standard-1_4+1/indexes/class3 output/n1-standard-1_4+1/kldivergence/class3 itwac: tweet: tab
+hadoop jar BDACP.jar kl_divergence output/n1-standard-1_4+1/indexes/itwac output/n1-standard-1_4+1/indexes/class4 output/n1-standard-1_4+1/kldivergence/class4 itwac: tweet: tab
+
+java -jar BDACP.jar external_sort_index output/n1-standard-1_4+1/kldivergence/class1 output/n1-standard-1_4+1/kldivergence/class1_sorted/ tab Long _SUCCESS
+java -jar BDACP.jar external_sort_index output/n1-standard-1_4+1/kldivergence/class3 output/n1-standard-1_4+1/kldivergence/class3_sorted/ tab Long _SUCCESS
+java -jar BDACP.jar external_sort_index output/n1-standard-1_4+1/kldivergence/class4 output/n1-standard-1_4+1/kldivergence/class4_sorted/ tab Long _SUCCESS
