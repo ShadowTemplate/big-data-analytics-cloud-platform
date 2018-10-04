@@ -3,10 +3,10 @@
 A scalable platform to perform distributed linguistic analyses on geolocalized 
 tweets using [Apache Hadoop](https://hadoop.apache.org/) on top of the 
 [Google Cloud Platform](https://cloud.google.com/).
-This software is linked to the *Mappa dell’Intolleranza*, an 
-[Italian project](http://www.voxdiritti.it/vox-lancia-la-prima-mappa-dellintolleranza/)
-designed to detect and prevent phenomena related to homophobia, racism, 
-misogyny and other forms of intolerance.
+This software is linked to the 
+[Mappa dell’Intolleranza](http://www.voxdiritti.it/vox-lancia-la-prima-mappa-dellintolleranza/), 
+an Italian project designed to detect and prevent phenomena related to 
+homophobia, racism, misogyny and other forms of intolerance.
 
 Please refer to the 
 [thesis](https://github.com/ShadowTemplate/big-data-analytics-cloud-platform/blob/master/Tesi%20Taneburgo%20Gianvito%20-%20Piattaforma%20cloud%20per%20l'analisi%20di%20big%20data%20provenienti%20da%20social%20network.pdf) 
@@ -43,7 +43,7 @@ year.
 ---
 ## Getting Started
 
-The provided code was used to perform a wide range of task during my thesis 
+The provided code was used to perform a wide range of tasks during my thesis 
 work, such as crawling tweets, processing data sets, indexing and performing 
 linguistic analyses in a distributed fashion.
 
@@ -56,8 +56,8 @@ that requires an account with billing enabled.
 In addition, even sharing input/output files is complicated due to the large 
 size of the data set involved.
 In fact, the linguistic analyses have involed **itWaC**, a 2 billion word 
-corpus constructed from the Web using medium-frequency words from a newspaper 
-and basic Italian vocabulary lists as seeds.
+corpus (6+ GB) constructed from the Web using medium-frequency words from a 
+newspaper and basic Italian vocabulary lists as seeds.
 The data set can be downloaded 
 [here](http://wacky.sslmit.unibo.it/doku.php?id=download).
 
@@ -76,7 +76,7 @@ It contains the main entry points for the application and all the facade
 classes to be used to run the different tasks.
 Each task is documented and provides details on how it should be invoked.
 In addition, some commands can be found in 
-[these examples](command examples.txt). 
+[these examples](https://github.com/ShadowTemplate/big-data-analytics-cloud-platform/blob/master/command%20examples.txt). 
 
 The most important MapReduce task is a distributed computation of the 
 [Kullback–Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence)
